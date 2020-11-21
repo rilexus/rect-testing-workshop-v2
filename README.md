@@ -39,5 +39,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
             * on click
             * on mount
     - modules
+        * mock-api
+        * mock components
     - react elements    
     

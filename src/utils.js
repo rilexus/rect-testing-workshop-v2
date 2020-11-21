@@ -30,5 +30,8 @@ function setNativeValue(element, value) {
 
 const sleep = time => new Promise(res => setTimeout(res, time))
 
+const getUsers = async () => {
+  return [{name: 'stan'}, {name: 'jung-dreas'}, {name: 'markus'}]
+}
 
-export { setNativeValue, sleep }
+export { setNativeValue, sleep, getUsers }

@@ -27,14 +27,5 @@ const Users = ({ getUsers, id }) => {
 };
 
 describe("Resolve", () => {
-  it.skip("should show user name list", async function () {
-    const { queryByRole, queryByText } = render(
-      <Users getUsers={async () => {}} id={"id"} />
-    );
-    //
-    const button = queryByRole("button");
-    await act(async () => user.click(button));
-
-    expect(queryByText("stan")).toContainHTML("stan");
-  });
+  it.skip("should show user name list", async function () {});
 });
