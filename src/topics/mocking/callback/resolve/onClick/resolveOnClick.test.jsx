@@ -31,7 +31,7 @@ describe("Resolve", () => {
     const { queryByRole, queryByText } = render(
       <Users getUsers={async () => {}} id={"id"} />
     );
-
+    //
     const button = queryByRole("button");
     await act(async () => user.click(button));
 
