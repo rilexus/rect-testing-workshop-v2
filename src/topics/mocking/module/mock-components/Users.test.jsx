@@ -8,7 +8,7 @@ jest.mock("./SomeHugeWrapper");
 describe("Resolve", () => {
   beforeEach(() => {
     MockedSomeHugeWrapper.mockImplementation(({ children }) => (
-      <div>children</div>
+      <div>{children}</div>
     ));
   });
   it("should show user name list", async function () {
