@@ -1,4 +1,5 @@
 import { render } from "@testing-library/react";
+import { act } from "react-dom/test-utils";
 import React from "react";
 
 function renderHook(useHook) {
@@ -9,8 +10,9 @@ function renderHook(useHook) {
     Object.assign(result, { current });
     return null;
   }
-
-  render(<Component />);
+  act(() => {
+    render(<Component />);
+  });
 
   return result;
 }

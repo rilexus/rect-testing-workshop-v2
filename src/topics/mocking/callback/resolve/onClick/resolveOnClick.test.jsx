@@ -3,11 +3,6 @@ import { act, render } from "@testing-library/react";
 import user from "@testing-library/user-event";
 import { sleep } from "../../../../../utils";
 
-const getUsers = async () => {
-  await sleep(100);
-  return [{ name: "stan" }, { name: "bogdan" }, { name: "markus" }];
-};
-
 const Users = ({ getUsers, id }) => {
   const [users, setUsers] = useState([]);
 
@@ -27,5 +22,9 @@ const Users = ({ getUsers, id }) => {
 };
 
 describe("Resolve", () => {
-  it.skip("should show user name list", async function () {});
+  it.skip("should show user name list", async function () {
+    // const button =
+    // use to :
+    // await act(async () => user.click(button));
+  });
 });

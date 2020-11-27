@@ -6,12 +6,10 @@ import { SomeHugeWrapper as MockedSomeHugeWrapper } from "./SomeHugeWrapper";
 jest.mock("./SomeHugeWrapper");
 
 describe("Resolve", () => {
-  beforeEach(() => {
+  it("should show user name list", async function () {
     MockedSomeHugeWrapper.mockImplementation(({ children }) => (
       <div>{children}</div>
     ));
-  });
-  it("should show user name list", async function () {
     const { queryByTestId } = render(<Users id={"id"} />);
     const comp = queryByTestId("id");
 

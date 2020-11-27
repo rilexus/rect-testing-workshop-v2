@@ -1,11 +1,11 @@
-import { getUsers } from "../../../../utils";
+import * as api from "../../../../utils";
 import React, { useState } from "react";
 
-const Users = ({ id }) => {
+const Users = ({ id /* getUsers = api.getUsers */ }) => {
   const [users, setUsers] = useState([]);
 
   const handleClick = () => {
-    getUsers().then((users) => setUsers(users));
+    api.getUsers().then((users) => setUsers(users));
   };
 
   return (

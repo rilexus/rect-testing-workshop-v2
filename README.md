@@ -21,25 +21,34 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## Table of Content
 * Basic render
-* Input value and props
-* Render abstraction
+    - Wrapper
+    - Props
+    - Input (Exercise)
 * Philosophy of UI Testing
-    - get-by-label-text
-    - get-by-test-id
-* Events
-    - change
+    - get-by-test-id (Exercise)
+    - get-by-label-text (Exercise)
+* Render abstraction
+    - Wrapper
+* User Interactions (Events)
     - click
-        * fireEvent function
+    - change
+    - fireEvent abstraction
     - user-events
 * Mocking
-    - functions
+    - callback
         * haveBeenCalled
-        * calledWith
+        * calledWith (Exercise)
         * resolve
-            * on click
-            * on mount
+            * onClick (Exercise)
+            * onMount (Exercise)
     - modules
         * mock-api
         * mock components
-    - react elements    
+* Hooks
+    - useState
+    - useFetch (Exercise)
+
+* Its TDD bitches
+    - Input (Team Exercise)
+    - Login (Exercise)
     

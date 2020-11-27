@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import React from "react";
-import {getByLabelText} from "../get-by-label-text/getByLabelText";
+import {getByLabelText} from "../philosophy/get-by-label-text/getByLabelText";
 
 const render = (ui, options) => {
   const container = document.createElement('div')

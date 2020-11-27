@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import {Wrapper} from "../../componetns/wrapper/Wrapper";
+import {Wrapper} from "../../../componetns/wrapper/Wrapper";
 import React from "react";
 import {getByTestId} from "./get-by-test-id";
 
